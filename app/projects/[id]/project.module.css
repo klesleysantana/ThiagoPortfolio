@@ -82,7 +82,7 @@
 
 /* Narrative */
 .narrative {
-  padding: 6rem 0;
+  padding: 4rem 0 0;
 }
 
 .textBlock {
@@ -107,7 +107,7 @@
 
 /* Gallery */
 .gallery {
-  padding: 2rem 0;
+  padding: 0;
 }
 
 .galleryGrid {
@@ -212,12 +212,6 @@
 
 .arrowRight {
   right: 10px;
-}
-
-@media (max-width: 1024px) {
-  .carouselArrow {
-    display: none;
-  }
 }
 
 .swipeHint {

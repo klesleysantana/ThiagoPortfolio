@@ -67,6 +67,13 @@ export default async function ProjectPage({ params }) {
             <h2>Minha Atuação</h2>
             <p style={{ whiteSpace: 'pre-wrap' }}>{project.strategy}</p>
           </div>
+
+          {project.squad && (
+            <div className={styles.textBlock}>
+              <h2>Squad</h2>
+              <p>{project.squad}</p>
+            </div>
+          )}
         </div>
       </section>
 
