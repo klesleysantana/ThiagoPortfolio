@@ -33,7 +33,6 @@ export default function Home() {
           <ul className={styles.navLinks}>
             <li><Link href="#work">Projetos</Link></li>
             <li><Link href="#about">Sobre</Link></li>
-            <li><Link href="#contact">Contato</Link></li>
           </ul>
         </div>
       </header>
@@ -91,9 +90,9 @@ export default function Home() {
               <button className={styles.primaryBtn} onClick={() => document.getElementById('work').scrollIntoView({ behavior: 'smooth' })}>
                 Ver Trabalhos <ArrowRight size={20} />
               </button>
-              <button className={styles.secondaryBtn}>
+              <a href="https://wa.me/5579991437315" target="_blank" rel="noopener noreferrer" className={styles.secondaryBtn}>
                 Entre em Contato
-              </button>
+              </a>
             </div>
           </motion.div>
         </div>
