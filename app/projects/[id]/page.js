@@ -113,6 +113,20 @@ export default async function ProjectPage({ params }) {
                 </div>
               );
             }
+            if (block.type === 'image') {
+              return (
+                <div key={idx} className={styles.imageWrapper}>
+                  <Image 
+                    src={block.url} 
+                    alt={`${project.title} block image`} 
+                    width={1200} 
+                    height={800} 
+                    className={styles.galleryImage}
+                    unoptimized
+                  />
+                </div>
+              );
+            }
             return null;
           }) : project.images?.map((img, idx) => (
             <div key={idx} className={styles.imageWrapper}>
